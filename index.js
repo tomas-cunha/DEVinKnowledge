@@ -55,6 +55,9 @@ function verificaVideo(obj) {
 }
 
 function criaCard(arr) {
+    if(arr == null) {
+        return;
+    }
 
     arr.forEach((obj) => {
         let item = document.createElement('li');
